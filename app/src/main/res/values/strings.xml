@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">HARMONY</string>
+    <string name="title_home">Koła</string>
+    <string name="title_learn">Nauka</string>
+    <string name="title_practise">Cwiczenia</string>
+    <string name="c">c</string>
+    <string name="g">g</string>
+    <string name="d">d</string>
+    <string name="a">a</string>
+    <string name="C">C</string>
+    <string name="Ces">Ces</string>
+    <string name="Ges">Ges</string>
+    <string name="Des">Des</string>
+    <string name="As">As</string>
+    <string name="Es">Es</string>
+    <string name="B">B</string>
+    <string name="F">F</string>
+    <string name="f">f</string>
+    <string name="b">b</string>
+    <string name="es">es</string>
+    <string name="as">as</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_practise">PractiseActivity</string>
+    <string name="tab_text_1">SUBDOMINANTA</string>
+    <string name="tab_text_2">DOMINANTA</string>
+    <string name="tab_text_3">TONIKA</string>
+    <string name="G">G</string>
+    <string name="D">D</string>
+    <string name="A">A</string>
+    <string name="E">E</string>
+    <string name="H">H</string>
+    <string name="Fis">Fis</string>
+    <string name="Cis">Cis</string>
+    <string name="e">e</string>
+    <string name="h">h</string>
+    <string name="fis">fis</string>
+    <string name="cis">cis</string>
+    <string name="gis" >gis</string>
+
+</resources>

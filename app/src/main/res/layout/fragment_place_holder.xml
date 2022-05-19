@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.harmony.ui.main.PageViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.main.PlaceholderFragment">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="388dp"
+            android:layout_height="336dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.578"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/f_dur"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{() -> viewModel.getKey(@string/F)}"
+                    android:text="@string/F"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.305"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.737" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/b_dur"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{() -> viewModel.getKey(@string/B)}"
+                    android:text="@string/B"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.952"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.941" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/es_dur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{() -> viewModel.getKey(@string/Es)}"
+                    android:text="@string/Es"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.182" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/as_dur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{() -> viewModel.getKey(@string/As)}"
+                    android:text="@string/As"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.835"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.058" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/des_dur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{() -> viewModel.getKey(@string/Des)}"
+                    android:text="@string/Des"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.552"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/ges_dur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{() -> viewModel.getKey(@string/Ges)}"
+                    android:text="@string/Ges"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.238"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.058" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/ces_dur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{() -> viewModel.getKey(@string/Ces)}"
+                    android:text="@string/Ces"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.032"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.27" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/c_dur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:onClick="@{() -> viewModel.getKey(@string/C)}"
+                    android:text="@string/C"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.529"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/a_moll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{() -> viewModel.getKey(@string/a)}"
+                    android:text="@string/a"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.67"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.562" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/d_moll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{() -> viewModel.getKey(@string/d)}"
+                    android:text="@string/d"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.447"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.799" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/g_moll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{() -> viewModel.getKey(@string/g)}"
+                    android:text="@string/g"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.811"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.912" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/c_moll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{() -> viewModel.getKey(@string/c)}"
+                    android:text="@string/c"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.858"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.259" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/f_moll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{() -> viewModel.getKey(@string/f)}"
+                    android:text="@string/f"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.694"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.098" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/b_moll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{() -> viewModel.getKey(@string/b)}"
+                    android:text="@string/b"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.411"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.102" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/es_moll"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:onClick="@{() -> viewModel.getKey(@string/es)}"
+                    android:text="@string/es" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/as_moll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/as"
+                    android:onClick="@{() -> viewModel.getKey(@string/as)}"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/g_dur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/G"
+                    android:onClick="@{() -> viewModel.getKey(@string/G)}"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/d_dur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/D"
+                    android:onClick="@{() -> viewModel.getKey(@string/D)}"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/a_dur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/A"
+                    android:onClick="@{() -> viewModel.getKey(@string/A)}"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/e_dur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/E"
+                    android:onClick="@{() -> viewModel.getKey(@string/E)}"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/h_dur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/H"
+                    android:onClick="@{() -> viewModel.getKey(@string/H)}"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/fis_dur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Fis"
+                    android:onClick="@{() -> viewModel.getKey(@string/Fis)}"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cis_dur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Cis"
+                    android:onClick="@{() -> viewModel.getKey(@string/Cis)}"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/e_moll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/e"
+                    android:onClick="@{() -> viewModel.getKey(@string/e)}"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/h_moll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/h"
+                    android:onClick="@{() -> viewModel.getKey(@string/h)}"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/fis_moll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fis"
+                    android:onClick="@{() -> viewModel.getKey(@string/fis)}"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/cis_moll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cis"
+                    android:onClick="@{() -> viewModel.getKey(@string/cis)}"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/gis_moll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gis"
+                    android:onClick="@{() -> viewModel.getKey(@string/gis)}"/>
+            </com.google.android.material.chip.ChipGroup>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/coordinatorLayout"
+            android:layout_width="413dp"
+            android:layout_height="388dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/resultView"
+                android:layout_width="107dp"
+                android:layout_height="108dp"
+                android:background="@color/purple_200"
+                android:elevation="20dp"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp"
+                android:text="@{viewModel.resultView}"
+                android:textAlignment="center"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/randomButton"
+                app:layout_constraintVertical_bias="0.472" />
+
+            <Button
+                android:id="@+id/randomButton"
+                style="@style/Widget.Design.FloatingActionButton"
+                android:layout_width="130dp"
+                android:layout_height="104dp"
+                android:layout_marginBottom="224dp"
+                android:elevation="0dp"
+                android:text="@={viewModel.randomButton}"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TONIKA:"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/randomButton"
+                app:layout_constraintHorizontal_bias="0.542"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.403" />
+
+            <TextView
+                android:id="@+id/userResultText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.userResultText}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.075"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/randomButton"
+                app:layout_constraintVertical_bias="0.921" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginBottom="101dp"
+                android:text="@{viewModel.texta}"
+                app:layout_constraintBottom_toTopOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/checkView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="poprawnych odpowiedzi"
+                app:layout_constraintBottom_toTopOf="@+id/resultView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.061"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.08" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.harmony.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_learn"
+        android:name="com.example.harmony.ui.learn.LearnFragment"
+        android:label="@string/title_learn"
+        tools:layout="@layout/fragment_learn" >
+        <action
+            android:id="@+id/action_navigation_learn_to_triadsLearn"
+            app:destination="@id/triadsLearn"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/mobile_navigation"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_practise"
+        android:name="com.example.harmony.ui.practise.PractiseFragment"
+        android:label="@string/title_practise"
+        tools:layout="@layout/fragment_practise" >
+        <action
+            android:id="@+id/action_navigation_practise_to_allKeysFragment"
+            app:destination="@id/allKeysFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/triadsLearn"
+        android:name="com.example.harmony.ui.learn.TriadsLearnFragment"
+        android:label="Tonacje do 7 bemoli"
+        tools:layout="@layout/triads_learn_fragment" >
+        <action
+            android:id="@+id/action_triadsLearn_to_navigation_learn"
+            app:destination="@id/navigation_learn"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/navigation_learn"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/allKeysFragment"
+        android:name="com.example.harmony.AllKeysFragment"
+        android:label="fragment_all_keys"
+        tools:layout="@layout/fragment_all_keys" >
+        <action
+            android:id="@+id/action_allKeysFragment_to_navigation_practise"
+            app:destination="@id/navigation_practise" />
+    </fragment>
+    <fragment
+        android:id="@+id/flatFragment"
+        android:name="com.example.harmony.FlatFragment"
+        android:label="fragment_flat"
+        tools:layout="@layout/fragment_flat" />
+</navigation>

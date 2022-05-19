@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.harmony.ui.learn.TriadsLearnViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="414dp"
+        android:layout_height="680dp"
+        tools:context=".ui.learn.TriadsLearnFragment">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="296dp"
+            android:layout_height="241dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.286"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.124"
+            app:srcCompat="@drawable/kisspng_golden_spiral_golden_ratio_clip_art_number_fibonacci_drawing_black_and_white_transparent_amp_5d023ac52f2332_4604504315604272051931" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="390dp"
+                android:layout_height="322dp"
+                android:transitionGroup="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.347"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.038">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="388dp"
+                    android:layout_height="336dp">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/f_dur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{()->viewModel.jou(@string/F)}"
+                        android:text="@string/F"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.305"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.737" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/b_dur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{()->viewModel.jou(@string/B)}"
+                        android:text="@string/B"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.952"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.941" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/es_dur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{()->viewModel.jou(@string/Es)}"
+                        android:text="@string/Es"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.182" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/as_dur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{()->viewModel.jou(@string/As)}"
+                        android:text="@string/As"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.835"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.058" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/des_dur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{()->viewModel.jou(@string/Des)}"
+                        android:text="@string/Des"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.552"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/ges_dur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{()->viewModel.jou(@string/Ges)}"
+                        android:text="@string/Ges"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.238"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.058" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/ces_dur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{()->viewModel.jou(@string/Ces)}"
+                        android:text="@string/Ces"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.032"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.27" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/c_dur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:onClick="@{()->viewModel.jou(@string/C)}"
+                        android:text="@string/C"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.529"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/a_moll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{()->viewModel.jou(@string/a)}"
+                        android:text="@string/a"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.67"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.562" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/d_moll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{()->viewModel.jou(@string/d)}"
+                        android:text="@string/d"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.447"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.799" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/g_moll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{()->viewModel.jou(@string/g)}"
+                        android:text="@string/g"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.811"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.912" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/c_moll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{()->viewModel.jou(@string/c)}"
+                        android:text="@string/c"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.858"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.259" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/f_moll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{()->viewModel.jou(@string/f)}"
+                        android:text="@string/f"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.694"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.098" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/b_moll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{()->viewModel.jou(@string/b)}"
+                        android:text="@string/b"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.411"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.102" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/es_moll"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:onClick="@{()->viewModel.jou(@string/es)}"
+                        android:text="@string/es"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/es_dur"
+                        app:layout_constraintHorizontal_bias="0.172"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.231" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/as_moll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{()->viewModel.jou(@string/as)}"
+                        android:text="@string/as"
+                        app:chipStrokeColor="@color/design_default_color_primary"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.445" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:layout_width="410dp"
+            android:layout_height="371dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/tonic_card"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    app:cardBackgroundColor="#004d40"
+                    app:cardCornerRadius="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.146">
+
+                    <Button
+                        android:id="@+id/tonic_5"
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginRight="15dp"
+                        android:padding="0dp"
+                        android:text="@{viewModel.harmonicTriad.tonicTriad.quint.note.toString()}"
+                        android:textColor="@color/design_default_color_primary"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/tonic_3"
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center|bottom"
+                        android:padding="0dp"
+                        android:text="@{viewModel.harmonicTriad.tonicTriad.third.note.toString()}"
+                        android:textColor="@color/design_default_color_primary"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/tonic_1"
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginLeft="15dp"
+                        android:padding="0dp"
+                        android:text="@{viewModel.harmonicTriad.tonicTriad.prime.note.toString()}"
+                        android:textColor="@color/design_default_color_primary"
+                        android:textSize="15dp" />
+
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/design_default_color_error"
+                        android:text="TONIKA: "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/design_default_color_on_primary" />
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/tonicName"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="55dp"
+                    android:layout_height="41dp"
+                    android:padding="2dp"
+                    android:rotationY="-30"
+                    android:text="@{viewModel.harmonicTriad.tonicTriad.nameTriad.toString()}"
+                    android:textColor="@color/design_default_color_on_primary"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tonic_card"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.723"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.537" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/subdominant_card"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="144dp"
+                    app:cardBackgroundColor="#004d40"
+                    app:cardCornerRadius="3dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tonic_card"
+                    app:layout_constraintVertical_bias="0.3">
+
+                    <Button
+                        android:id="@+id/subdominant_3"
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center|bottom"
+                        android:padding="0dp"
+                        android:text="@{viewModel.harmonicTriad.subdominantTriad.third.note.toString()}"
+                        android:textColor="@color/design_default_color_primary"
+                        android:textSize="15dp" />
+
+
+                    <Button
+                        android:id="@+id/subdominant_1"
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginLeft="15dp"
+                        android:padding="0dp"
+                        android:text="@{viewModel.harmonicTriad.subdominantTriad.prime.note.toString()}"
+                        android:textColor="@color/design_default_color_primary"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SUBDOMINANTA: "
+                        android:textColor="@color/design_default_color_on_primary" />
+
+
+                    <Button
+                        android:id="@+id/subdominant_5"
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginRight="15dp"
+                        android:padding="0dp"
+                        android:text="@{viewModel.harmonicTriad.subdominantTriad.quint.note.toString()}"
+                        android:textSize="15dp" />
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/subdominantName"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="55dp"
+                    android:layout_height="40dp"
+                    android:elevation="50dp"
+                    android:rotationY="-30"
+                    android:text="@{viewModel.harmonicTriad.subdominantTriad.nameTriad.toString()}"
+                    android:textSize="20dp"
+                    android:textColor="@color/design_default_color_on_primary"
+                    app:layout_constraintBottom_toBottomOf="@+id/subdominant_card"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.723"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.815" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/dominant_card"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    app:cardBackgroundColor="#004d40"
+                    app:cardCornerRadius="4dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tonic_card"
+                    app:layout_constraintVertical_bias="0.464">
+
+                    <Button
+                        android:id="@+id/tercja1"
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center|bottom"
+                        android:padding="0dp"
+                        android:text="@{viewModel.harmonicTriad.dominantTriad.third.note.toString()}"
+                        android:textSize="15dp" />
+
+                    <Button
+                        android:id="@+id/prime1"
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginLeft="15dp"
+                        android:padding="0dp"
+                        android:text="@{viewModel.harmonicTriad.dominantTriad.prime.note.toString()}"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DOMINANTA: "
+                        android:textColor="@color/design_default_color_on_primary" />
+
+                    <Button
+                        android:id="@+id/kwinta1"
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginRight="15dp"
+                        android:padding="0dp"
+                        android:text="@{viewModel.harmonicTriad.dominantTriad.quint.note.toString()}"
+                        android:textSize="15dp" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/dominantName"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="55dp"
+                    android:layout_height="41dp"
+                    android:rotationY="-30"
+                    android:text="@{viewModel.harmonicTriad.dominantTriad.nameTriad.toString()}"
+                    android:textSize="20dp"
+                    android:textColor="@color/design_default_color_on_primary"
+                    app:layout_constraintBottom_toBottomOf="@+id/dominant_card"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.723"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tonic_card"
+                    app:layout_constraintVertical_bias="0.812" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
